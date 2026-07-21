@@ -1,0 +1,46 @@
+🚚 Análise de Desempenho Logístico: Viabilidade de Cargas Perecíveis
+
+📌 Visão Geral do Projeto
+
+Este projeto faz parte do portfólio de análise de dados com foco em Melhoria de Processos (Lean Six Sigma - Green Belt).
+
+O objetivo é avaliar o desempenho de uma empresa de logística que tradicionalmente opera com cargas não perecíveis e decidiu testar a entrega de produtos perecíveis para clientes dos ramos farmacêutico e alimentício.
+
+O Problema de Negócio:
+Para que as entregas de produtos perecíveis sejam viáveis e não gerem multas ou perda de credibilidade, o tempo de entrega em uma rota específica não pode ultrapassar 50 horas. A direção instruiu a equipe a priorizar essas cargas, mas precisava de dados concretos para decidir se abraçaria ou não este novo segmento de mercado.
+
+🎯 Objetivos da Análise (Fase Measure - DMAIC)
+
+Analisar a estabilidade do processo de entregas ao longo do tempo (Gráfico de Tendência).
+
+Entender a distribuição dos tempos de entrega comparando cargas perecíveis e não perecíveis (Histograma).
+
+Avaliar a capacidade do processo de atender a meta do cliente (Tempo $\le$ 50 horas).
+
+Fornecer uma recomendação baseada em dados sobre a entrada da empresa neste novo mercado.
+
+🛠️ Tecnologias Utilizadas
+
+Linguagem: Python
+
+Manipulação de Dados: pandas
+
+Visualização de Dados: matplotlib, seaborn
+
+
+
+Principais Descobertas:
+
+Tendência: O Gráfico de Série Temporal demonstrou que o tempo de entrega não apresenta um comportamento estável, indicando alta variabilidade no processo.
+
+Distribuição: A análise de frequências (Histograma) revelou o comportamento das entregas. As entregas perecíveis, apesar da instrução de prioridade, apresentaram uma variação significativa.
+
+Capacidade do Processo: O cálculo direto na base de dados revelou a taxa de sucesso.
+
+💡 Conclusão e Recomendação (Business Insight)
+
+Os dados demonstram que apenas a "instrução verbal" da diretoria para priorizar as cargas perecíveis não foi suficiente para garantir a qualidade do serviço. O processo atual não é capaz de atender consistentemente a especificação do cliente (Limite Superior de Especificação - USL = 50h).
+
+Recomendação: A empresa não deve abraçar este mercado em larga escala neste momento. É necessário iniciar a fase Analyze do ciclo DMAIC para identificar as causas raiz dos atrasos e reestruturar o processo logístico (fase Improve) antes de assumir novos compromissos com cargas perecíveis.
+
+Projeto desenvolvido como parte dos estudos de certificação Lean Six Sigma Green Belt.
