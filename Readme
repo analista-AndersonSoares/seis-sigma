@@ -1,46 +1,71 @@
-🚚 Análise de Desempenho Logístico: Viabilidade de Cargas Perecíveis
+🟢 Portfólio de Melhoria Contínua: Lean Six Sigma (Green Belt) com Python
 
-📌 Visão Geral do Projeto
+📌 Sobre o Repositório
 
-Este projeto faz parte do portfólio de análise de dados com foco em Melhoria de Processos (Lean Six Sigma - Green Belt).
+Este repositório documenta minha jornada prática rumo à certificação Lean Six Sigma Green Belt (baseado no currículo da FM2S).
 
-O objetivo é avaliar o desempenho de uma empresa de logística que tradicionalmente opera com cargas não perecíveis e decidiu testar a entrega de produtos perecíveis para clientes dos ramos farmacêutico e alimentício.
+O grande diferencial deste portfólio: Em vez de utilizar softwares estatísticos fechados tradicionais (como Minitab), todas as análises, tratamentos de dados e geração de gráficos estatísticos (fases Measure e Analyze do DMAIC) foram desenvolvidos do zero utilizando Python e Data Science.
 
-O Problema de Negócio:
-Para que as entregas de produtos perecíveis sejam viáveis e não gerem multas ou perda de credibilidade, o tempo de entrega em uma rota específica não pode ultrapassar 50 horas. A direção instruiu a equipe a priorizar essas cargas, mas precisava de dados concretos para decidir se abraçaria ou não este novo segmento de mercado.
+O objetivo é provar que a união entre Mentalidade de Processos (Lean) e Análise de Dados Automatizada (Python) é a chave para resolver problemas complexos de negócios com agilidade e precisão.
 
-🎯 Objetivos da Análise (Fase Measure - DMAIC)
+🛠️ Ferramentas Utilizadas
 
-Analisar a estabilidade do processo de entregas ao longo do tempo (Gráfico de Tendência).
+Python: Linguagem base para toda a lógica de programação.
 
-Entender a distribuição dos tempos de entrega comparando cargas perecíveis e não perecíveis (Histograma).
+Pandas: Utilizado para ETL (Extração, Transformação e Limpeza de Dados), agrupamentos (.groupby), estratificação e cálculo de estatísticas descritivas.
 
-Avaliar a capacidade do processo de atender a meta do cliente (Tempo $\le$ 50 horas).
+Matplotlib & Seaborn: Criação de Dashboards Estatísticos, incluindo Gráficos de Tendência, Histogramas, Boxplots, Gráficos de Pareto e Cartas de Controle.
 
-Fornecer uma recomendação baseada em dados sobre a entrada da empresa neste novo mercado.
+VS Code / Google Colab: Ambientes de desenvolvimento e versionamento de código.
 
-🛠️ Tecnologias Utilizadas
+🚀 Desafios Abordados (Casos Reais)
 
-Linguagem: Python
+Os scripts e análises contidos aqui resolvem problemas clássicos de diferentes indústrias, aplicando a metodologia DMAIC:
 
-Manipulação de Dados: pandas
+🚚 Logística e Transportes (Exercício 1):
 
-Visualização de Dados: matplotlib, seaborn
+Problema: Avaliar a viabilidade de entrar no mercado de cargas perecíveis com SLA restrito (< 50h).
 
+Solução Python: Filtragem de dados com Pandas e geração de Histogramas e Gráficos de Série Temporal (Seaborn) para provar a instabilidade e (falta de) capabilidade do processo.
 
+🏥 Saúde e Atendimento (Exercícios 2 e 3):
 
-Principais Descobertas:
+Problema: Medir a satisfação de pacientes em uma clínica e analisar gargalos no tempo de espera de uma UPA baseado em Triagem de Risco.
 
-Tendência: O Gráfico de Série Temporal demonstrou que o tempo de entrega não apresenta um comportamento estável, indicando alta variabilidade no processo.
+Solução Python: Uso de Boxplots para estratificação de especialidades, análise de outliers e mapeamento visual de "Shifts" (melhorias de processo) na linha do tempo.
 
-Distribuição: A análise de frequências (Histograma) revelou o comportamento das entregas. As entregas perecíveis, apesar da instrução de prioridade, apresentaram uma variação significativa.
+🏭 Manufatura Industrial (Exercício 4):
 
-Capacidade do Processo: O cálculo direto na base de dados revelou a taxa de sucesso.
+Problema: Reduzir o tempo de máquina parada (injetoras plásticas) em 30%.
 
-💡 Conclusão e Recomendação (Business Insight)
+Solução Python: Cruzamento de bancos de dados da Produção vs. Manutenção, agrupamento de falhas e análise de causas comuns vs. especiais.
 
-Os dados demonstram que apenas a "instrução verbal" da diretoria para priorizar as cargas perecíveis não foi suficiente para garantir a qualidade do serviço. O processo atual não é capaz de atender consistentemente a especificação do cliente (Limite Superior de Especificação - USL = 50h).
+⚠️ Segurança do Trabalho (Exercício 5):
 
-Recomendação: A empresa não deve abraçar este mercado em larga escala neste momento. É necessário iniciar a fase Analyze do ciclo DMAIC para identificar as causas raiz dos atrasos e reestruturar o processo logístico (fase Improve) antes de assumir novos compromissos com cargas perecíveis.
+Problema: Redução de acidentes e tempo de afastamento.
 
-Projeto desenvolvido como parte dos estudos de certificação Lean Six Sigma Green Belt.
+Solução Python: Análise de Pareto para priorização de causas e estruturação de planos de ação (Focus on the Vital Few).
+
+🏬 Varejo (Exercício 6):
+
+Problema: Avaliar a eficácia de planos de ação de vendas em 4 lojas de móveis.
+
+Solução Python: Análise comparativa e Testes de Hipótese visuais (Antes vs. Depois) para verificar qual loja de fato mudou o patamar do processo.
+
+📈 Evolução e Aprendizados
+
+Durante a construção deste portfólio, desenvolvi fortes habilidades em:
+
+Entendimento do Negócio: Sair do "fazer gráficos" para "responder a dores da diretoria" (Onde está o gargalo? A mudança deu certo? O processo é estável?).
+
+Análise de Variação: Diferenciar Causas Comuns (ruído natural do processo) de Causas Especiais (anomalias que exigem investigação imediata).
+
+Estratificação de Dados: Cortar o banco de dados em fatias menores (por loja, por máquina, por tipo de cliente) para encontrar as verdadeiras raízes dos problemas.
+
+Engenharia de Software em Dados: Escrever códigos Python limpos, robustos contra erros de importação (lidando com múltiplos arquivos Excel e abas) e que automatizam horas de trabalho manual.
+
+💻 Como navegar
+
+Sinta-se à vontade para explorar os arquivos .py e .md na raiz do projeto. Cada script foi comentado detalhadamente explicando não apenas a sintaxe do código, mas a lógica de negócios e estatística por trás de cada linha.
+
+“In God we trust, all others must bring data.” – W. Edwards Deming
